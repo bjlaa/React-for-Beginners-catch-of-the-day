@@ -255,11 +255,12 @@ h2 {
 h3 {
   font-size: 3rem;
 }
-background orange,
+body {
+  background: #00f;
+}
 header.top {
   text-align: center;
 }
-background orange h1,
 header.top h1 {
   font-size: 14.4rem;
   line-height: 0.7;
@@ -272,7 +273,6 @@ header.top h1 {
       -ms-flex-pack: center;
           justify-content: center;
 }
-background orange h1 .ofThe,
 header.top h1 .ofThe {
   display: -webkit-box;
   display: -webkit-flex;
@@ -292,13 +292,11 @@ header.top h1 .ofThe {
   background-size: cover;
   padding: 0 1rem;
 }
-background orange h1 .ofThe .of,
 header.top h1 .ofThe .of {
   padding-right: 2rem;
   position: relative;
   right: -0.5rem;
 }
-background orange h3,
 header.top h3 {
   margin: 0;
   font-size: 2rem;
@@ -306,7 +304,6 @@ header.top h3 {
   position: relative;
   display: inline-block;
 }
-background orange h3 span,
 header.top h3 span {
   background: #fff;
   position: relative;
@@ -314,9 +311,7 @@ header.top h3 span {
   padding-left: 1rem;
   padding-right: 1rem;
 }
-background orange h3:before,
 header.top h3:before,
-background orange h3:after,
 header.top h3:after {
   display: block;
   z-index: 1;
@@ -328,7 +323,6 @@ header.top h3:after {
   top: 5px;
   margin-left: -15%;
 }
-background orange h3:after,
 header.top h3:after {
   top: auto;
   bottom: 7px;
