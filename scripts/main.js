@@ -17,7 +17,7 @@ var App = React.createClass({
 			</div>
 		)
 	}
-}):
+});
 /*
 
 	Store Picker
