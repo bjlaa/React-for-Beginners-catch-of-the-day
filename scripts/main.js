@@ -1,6 +1,10 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
+
 var ReactRouter = require('react-router');
+var Router = ReactRouter.Router;
+var Route = ReactRouter.Route;
+var Navigation = ReactRouter.Navigation;
 
 /*
 
@@ -95,6 +99,18 @@ var StorePicker = React.createClass({
 	}
 });
 
+/*
+
+	Route
+
+*/
+
+var routes = (
+	<Router>
+		<Route path="/" component={StorePicker}/>
+		<Route path="/store/:storedId" component={App}/>
+	</Router>
+)
 
 ReactDOM.render(<App/>, document.querySelector('#main')); 
 
