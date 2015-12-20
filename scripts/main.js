@@ -9,8 +9,8 @@ var App = React.createClass({
 	render: function(){
 		return (
 			<div className="catch-of-the-day">
-				<div class="menu">
-					<Header/>
+				<div className="menu">
+					<Header tagline="Fresh Seafood Market"/>
 				</div>
 				<Order/>
 				<Inventory/>
@@ -28,7 +28,15 @@ var App = React.createClass({
 var Header = React.createClass({
 	render: function(){
 		return (
-			<p>Header</p>
+			<header className="top">
+				<h1>Catch 
+					<span>
+						<span className="of">of</span>
+						<span className="the">the</span>
+					</span>
+				Day</h1>
+				<h3 className="tagline"><span>{this.props.tagline}</span></h3>
+			</header>
 		)
 	}
 
