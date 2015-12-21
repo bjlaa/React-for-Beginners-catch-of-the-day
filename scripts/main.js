@@ -6,6 +6,9 @@ var Router = ReactRouter.Router;
 var Route = ReactRouter.Route;
 var Navigation = ReactRouter.Navigation;
 var createBrowserHistory = require('history/lib/createBrowserHistory');
+
+var h = require('./helpers');
+
 /*
 
 	App
