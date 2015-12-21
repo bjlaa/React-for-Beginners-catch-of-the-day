@@ -95,7 +95,7 @@ var StorePicker = React.createClass({
 			<form className = "store-selector">
 				{/* Comments go here!*/}
 				<h2>Please enter a Store</h2>
-				<input type="text" ref="storedId" required/>
+				<input type="text" ref="storedId" defaultValue ={h.getFunName()} required/>
 				<input type="submit"/>
 			</form>
 		)
