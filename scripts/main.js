@@ -89,10 +89,18 @@ var Inventory = React.createClass({
 */
 
 var StorePicker = React.createClass({
+
+	goToStore: function(event){
+		event.preventDefault();
+		//get the data from the input
+		var storeId = this.refs.storeId.value;
+		console.log(storeId);
+		//transition fron <StorePicker/> to <App/>
+	},
 	render: function() {
 		// Normal comments
 		return (
-			<form className = "store-selector">
+			<form className = "store-selector" onSubmit={this.goToStore}>
 				{/* Comments go here!*/}
 				<h2>Please enter a Store</h2>
 				<input type="text" ref="storedId" defaultValue ={h.getFunName()} required/>
